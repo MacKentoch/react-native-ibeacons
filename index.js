@@ -1,6 +1,6 @@
 'use strict';
 
 import { NativeModules } from 'react-native';
-const NativeRNBeacon = NativeModules.RNiBeacon;
+const NativeRNiBeacons = NativeModules.RNiBeacon;
 
-export default NativeRNiBeacon;
+export default NativeRNiBeacons;
