@@ -1,6 +1,4 @@
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/MacKentoch/rn-analog-clock)
-
-# react-native-ibeacon
+# react-native-ibeacons
 
 
 ## Install
@@ -8,16 +6,16 @@
 ### get
 *via npm:*
 ```javascript:
-npm install react-native-ibeacon
+npm install react-native-ibeacons
 ```
 *or via yarn:*
 ```javascript:
-npm install react-native-ibeacon
+npm install react-native-ibeacons
 ```
 ### link
 
 ```javascript
-react-native link react-native-ibeacon
+react-native link react-native-ibeacons
 ```
 
 
