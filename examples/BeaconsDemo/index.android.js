@@ -147,6 +147,6 @@
  });
 
 AppRegistry.registerComponent(
-  'beaconsdemo',
+  'BeaconsDemo',
   () => BeaconsDemo
 );
