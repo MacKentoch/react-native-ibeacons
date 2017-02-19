@@ -2936,13 +2936,9 @@ react-native-bluetooth-state@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-native-bluetooth-state/-/react-native-bluetooth-state-2.0.0.tgz#a38eb7d68e0f5977375e41e20b5020ae27c3e800"
 
-react-native-ibeacons@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-ibeacons/-/react-native-ibeacons-0.1.0.tgz#bc5a3a890328cf1f524d19ad2f21ae4d672d10f7"
-
-"react-native-ibeacons@git+https://github.com/MacKentoch/react-native-ibeacons.git":
-  version "0.1.1"
-  resolved "git+https://github.com/MacKentoch/react-native-ibeacons.git#3ca158cc21f3e2b107a5aee204f794aad8792dd4"
+react-native-ibeacons@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-ibeacons/-/react-native-ibeacons-0.3.0.tgz#7244c6646435e387741ce16d9e4f516647ff8820"
 
 react-native@0.41.2:
   version "0.41.2"

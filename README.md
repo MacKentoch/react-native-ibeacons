@@ -4,6 +4,13 @@
 
 ![logo](./images/RN-iBeacon.png)
 
+`react-native-ibeacons`: add beacon technology in your React Native application for both iOS and Android.
+
+This repository is born to keep alive and up to date these 2 original awesome:
+- [ibeacon for android](https://github.com/mmazzarolo/react-native-beacons-android)
+- [ibeacon for iOS](https://github.com/frostney/react-native-ibeacon)
+
+
 ## Install (iOS and Android)
 
 > Ensure to have NodeJS >= v6.x.
@@ -18,7 +25,7 @@
 >   - 21 (*alias LOLLIPOP*)
 
 
-### 1. get
+### 1. get modules
 *via npm:*
 ```javascript:
 npm install react-native-ibeacons
@@ -27,24 +34,26 @@ npm install react-native-ibeacons
 ```javascript:
 yarn install react-native-ibeacons
 ```
-### 2. link
+### 2. link to your application
 
 ```javascript
 react-native link react-native-ibeacons
 ```
-### 3.a specific to iOS
+### 3.a configuration specific to iOS
 
 > IMPORTANT: you have to set `Bluetooth` and `localization service` in background Modes
-<!--  -->
+
 ![ios: active background mode](./images/bgmode.gif)
 
 
-### 3.b specific to Android
+### 3.b configuration specific to Android
 
 Nothing (lucky Android :smile:).
 
 
-## usage
+## 4 usage
+
+### 4.a iOS
 
 ```javascript
 var React = require('react-native');
@@ -86,6 +95,29 @@ var subscription = DeviceEventEmitter.addListener(
     //    .accuracy - The accuracy of a beacon
   }
 );
+```
+
+### 4.b Android
+
+```javascript
+import { DeviceEventEmitter } from 'react-native'
+import Beacons from 'react-native-beacons-android'
+
+// Tells the library to detect iBeacons
+Beacons.detectIBeacons()
+
+// Start detecting all iBeacons in the nearby
+try {
+  await Beacons.startRangingBeaconsInRegion('REGION1')
+  console.log(`Beacons ranging started succesfully!`)
+} catch (err) {
+  console.log(`Beacons ranging not started, error: ${error}`)
+}
+
+// Print a log of the detected iBeacons (1 per second)
+DeviceEventEmitter.addListener('beaconsDidRange', (data) => {
+  console.log('Found beacons!', data.beacons)
+})
 ```
 
 ## license
