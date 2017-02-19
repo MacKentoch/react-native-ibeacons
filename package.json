@@ -8,7 +8,10 @@
     "ios",
     "ibeacon",
     "beacon",
-    "beacons"
+    "beacons",
+    "android",
+    "ibeacons",
+    "altbeacons"
   ],
   "main": "index.js",
   "directories": {
