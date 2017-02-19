@@ -1,9 +1,24 @@
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/MacKentoch/react-native-ibeacons)
+
 # react-native-ibeacons
 
+![logo](./images/RN-iBeacon.png)
 
-## Install
+## Install (iOS and Android)
 
-### get
+> Ensure to have NodeJS >= v6.x.
+>
+> You must run on **real devices** (*don't forget to active Bluetooth when running*).
+
+**Mobile Version compatibility:**
+
+> - **iOS** `minimum version`
+>   -  8.0
+> - **Android** `minimum version`
+>   - 21 (*alias LOLLIPOP*)
+
+
+### 1. get
 *via npm:*
 ```javascript:
 npm install react-native-ibeacons
@@ -12,11 +27,22 @@ npm install react-native-ibeacons
 ```javascript:
 yarn install react-native-ibeacons
 ```
-### link
+### 2. link
 
 ```javascript
 react-native link react-native-ibeacons
 ```
+### 3.a specific to iOS
+
+> IMPORTANT: you have to set `Bluetooth` and `localization service` in background Modes
+<!--  -->
+![ios: active background mode](./images/bgmode.gif)
+
+
+### 3.b specific to Android
+
+Nothing (lucky Android :smile:).
+
 
 ## usage
 
