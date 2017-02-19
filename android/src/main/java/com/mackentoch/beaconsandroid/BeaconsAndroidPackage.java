@@ -1,4 +1,4 @@
-package com.mmazzarolo.beaconsandroid;
+package com.mackentoch.beaconsandroid;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

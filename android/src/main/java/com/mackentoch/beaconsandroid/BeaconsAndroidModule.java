@@ -1,4 +1,4 @@
-package com.mmazzarolo.beaconsandroid;
+package com.mackentoch.beaconsandroid;
 
 import android.content.Context;
 import android.content.Intent;
