@@ -1,8 +1,8 @@
 'use strict';
 
 import { Platform } from 'react-native';
-import RNiBeaconAndroid from './module.android';
-import RNiBeaconIOS from './module.ios';
+import RNiBeaconAndroid from './lib/module.android';
+import RNiBeaconIOS from './lib/module.ios';
 
 function moduleSelector() {
   if (Platform.OS === 'android') {
