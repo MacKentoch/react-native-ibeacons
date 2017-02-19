@@ -1,7 +1,7 @@
 {
   "name": "react-native-ibeacons",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.2.1",
+  "description": "React-Native library for detecting beacons (iOS and Android)",
   "keywords": [
     "react-native",
     "react-component",
@@ -13,6 +13,14 @@
     "ibeacons",
     "altbeacons"
   ],
+  "repository": {
+   "type": "git",
+   "url": "git+https://github.com/MacKentoch/react-native-ibeacons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MacKentoch/react-native-ibeacons/issues"
+  },
+  "homepage": "https://github.com/MacKentoch/react-native-ibeacons#readme",
   "main": "index.js",
   "directories": {
     "example": "examples"

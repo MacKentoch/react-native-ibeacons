@@ -10,7 +10,7 @@ npm install react-native-ibeacons
 ```
 *or via yarn:*
 ```javascript:
-npm install react-native-ibeacons
+yarn install react-native-ibeacons
 ```
 ### link
 
