@@ -2940,6 +2940,10 @@ react-native-ibeacons@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/react-native-ibeacons/-/react-native-ibeacons-0.1.0.tgz#bc5a3a890328cf1f524d19ad2f21ae4d672d10f7"
 
+"react-native-ibeacons@git+https://github.com/MacKentoch/react-native-ibeacons.git":
+  version "0.1.1"
+  resolved "git+https://github.com/MacKentoch/react-native-ibeacons.git#3ca158cc21f3e2b107a5aee204f794aad8792dd4"
+
 react-native@0.41.2:
   version "0.41.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.41.2.tgz#c6f486b8450a9909e6fed2dfd2c2af946563bf4f"
