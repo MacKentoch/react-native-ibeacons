@@ -56,6 +56,8 @@ Nothing (lucky Android :smile:).
 
 ### 4.a iOS
 
+#### Simple example
+
 ```javascript
 var React = require('react-native');
 var {DeviceEventEmitter} = React;
@@ -100,6 +102,8 @@ var subscription = DeviceEventEmitter.addListener(
 
 ### 4.b Android
 
+#### Simple example
+
 ```javascript
 import { DeviceEventEmitter } from 'react-native'
 import Beacons from 'react-native-beacons-android'
@@ -120,6 +124,26 @@ DeviceEventEmitter.addListener('beaconsDidRange', (data) => {
   console.log('Found beacons!', data.beacons)
 })
 ```
+
+#### API
+
+| method| description|
+|:-----|:------------|
+| **detectCustomBeaconLayout(parser: string): void**| Allows the detection of a custom beacon layout. For example `detectCustomBeaconLayout('m:0-3=4c000215,i:4-19,i:20-21,i:22-23,p:24-24')` allows you to detect iBeacons beacons.|
+| **detectIBeacons(): void**| Allows the detection of iBeacons. It's just like calling detectCustomBeaconLayout with the iBeacons layout.|
+| **detectEstimotes(): void**| Allows the detection of Estimote beacons. It's just like calling `detectCustomBeaconLayout` with the Estimote layout.|
+| **checkTransmissionSupported(): promise**| Checks if the device can use the Bluetooth to detect the beacons.|
+| **setForegroundScanPeriod(period: number): void**| Sets the duration in milliseconds of each Bluetooth LE scan cycle to look for beacons (in foreground). For more info [take a look at the official docs](https://altbeacon.github.io/android-beacon-library/javadoc/index.html)|
+| **setBackgroundScanPeriod(period: number): void**| Sets the duration in milliseconds of each Bluetooth LE scan cycle to look for beacons (in background). For more info [take a look at the official docs](https://altbeacon.github.io/android-beacon-library/javadoc/index.html)|
+| **setBackgroundBetweenScanPeriod(period: number): void**| Sets the duration in milliseconds spent not scanning between each Bluetooth LE scan cycle when no ranging/monitoring clients are in the foreground. For more info [take a look at the official docs](https://altbeacon.github.io/android-beacon-library/javadoc/index.html)|
+| **setHardwareEqualityEnforced(e: boolean): void**| Configures whether the bluetoothAddress (mac address) must be the same for two Beacons to be configured equal. This setting applies to all beacon instances in the same process. Defaults to false for backward compatibility. Useful when all the beacons you are working with have the same UUID, major and minor (they are only uniquely identifiable by their mac address), otherwise the module will detect all the beacons as if they were only one. For more info [take a look at the official docs](https://altbeacon.github.io/android-beacon-library/javadoc/index.html)|
+| **getRangedRegions(): promise** | Returns a promise that resolves in an array with the regions being ranged. |
+| **getMonitoredRegions(): promise** | Returns a promise that resolves in an array with the regions being monitored. |
+| **startMonitoringForRegion({identifier: string, uuid: string, minor: int, major: int}): promise** | Starts monitoring for beacons. The parameter `identifier` must be an unique ID. The parameter uuid is optional, it allows you to detect only the beacons with a specific UUID (if `null` every beacon will be detected). The parameters `minor` and `major` are optional, they allow you to monitor only the region of a specific beacon. |
+| **startRangingBeaconsInRegion(regionId: string, beaconsUUID: string): promise** | Starts range scan for beacons. The parameter `regionId` must be an unique ID. The parameter `beaconsUUID` is optional, it allows you to detect only the beacons with a specific UUID (if `null` every beacon will be detected). |
+| **stopMonitoringForRegion({identifier: string, uuid: string, minor: int, major: int}): promise** | Stops the monitoring for beacons. |
+| **stopRangingBeaconsInRegion(regionId: string, beaconsUUID: string): promise** | Stops the range scan for beacons. |
+
 
 ## license
 The MIT License (MIT)
