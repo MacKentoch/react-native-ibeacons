@@ -10,6 +10,7 @@ This repository is born to keep alive and up to date these 2 original awesome:
 - [ibeacon for android](https://github.com/mmazzarolo/react-native-beacons-android)
 - [ibeacon for iOS](https://github.com/frostney/react-native-ibeacon)
 
+If you want to know more about just have a look at [my medium article](https://medium.com/@erwan.datin/mmazzarolohow-to-play-with-ibeacons-in-a-react-native-application-5cef754b2edc#.e2bvgplvy).
 
 ## Install (iOS and Android)
 
