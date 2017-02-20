@@ -60,7 +60,7 @@ Nothing (lucky Android :smile:).
 var React = require('react-native');
 var {DeviceEventEmitter} = React;
 
-var Beacons = require('react-native-ibeacon');
+var Beacons = require('react-native-ibeacons');
 
 // Define a region which can be identifier + uuid,
 // identifier + uuid + major or identifier + uuid + major + minor
@@ -102,7 +102,7 @@ var subscription = DeviceEventEmitter.addListener(
 
 ```javascript
 import { DeviceEventEmitter } from 'react-native'
-import Beacons from 'react-native-beacons-android'
+import Beacons from 'react-native-ibeacons'
 
 // Tells the library to detect iBeacons
 Beacons.detectIBeacons()
