@@ -2,6 +2,8 @@
 
 # react-native-ibeacons
 
+## IMPORTANT this repository is deprecated and has moved to [react-native-beacons-manager](https://github.com/MacKentoch/react-native-beacons-manager)
+
 ![logo](./images/RN-iBeacon.png)
 
 `react-native-ibeacons`: add beacon technology in your React Native application for both iOS and Android.
